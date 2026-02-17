@@ -37,14 +37,12 @@ Exemplos:
 node JS/lacoFor.js
 node JS/hoisting.js
 node JS/operadoresComparacao.js
-Objetivo do repositório
-Fixar fundamentos de JavaScript (lógica + sintaxe)
 
-Ter exemplos práticos “na mão”
-
-Servir como referência rápida para revisar assuntos
-
-Criar histórico de evolução (commits) ao longo dos estudos
+## Objetivo do repositório
+## Fixar fundamentos de JavaScript (lógica + sintaxe)
+## Ter exemplos práticos “na mão”
+## Servir como referência rápida para revisar assuntos
+## Criar histórico de evolução (commits) ao longo dos estudos
 
 Convenções que eu uso aqui
 Comentários curtos explicando o “por quê”, não só o “o quê”
