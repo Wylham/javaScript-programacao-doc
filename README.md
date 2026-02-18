@@ -1,4 +1,4 @@
-# JS - Treinos e Anotações de Programação
+# JS - Estudos e Anotações de Programação
 
 Este repositório é um conjunto de arquivos simples em **JavaScript** com explicações e treinos práticos para fixar fundamentos de programação.
 
