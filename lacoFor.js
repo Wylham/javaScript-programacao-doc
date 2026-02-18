@@ -102,3 +102,64 @@ for (let i = 0; i < nums.length; i++) {
 const a = [1, 2, 3, 4];
 a.length = 2;
 console.log(a); // [1, 2]
+
+// --------------------------------
+
+// Omitindo partes do laço for
+// Uma coisa interessante sobre o for é que você pode omitir qualquer uma das três partes dele
+// (inicialização, condição ou incremento), se fizer sentido para o seu código:
+
+// Omitindo a inicialização
+// Se a variável já estiver definida antes do loop:
+
+let i = 0;
+
+for (; i < 5; i++) {
+  console.log(i);
+}
+
+// Resultado: 0, 1, 2, 3, 4
+
+// Omitindo a condição
+// Cuidado com essa forma, pois pode gerar loops infinitos. Você precisa garantir que terá um ponto de parada interno:
+
+let i1 = 0;
+
+for (; ; i++) {
+  if (i1 >= 5) break;
+
+  console.log(i);
+}
+
+// Resultado: 0, 1, 2, 3, 4
+
+// Omitindo o incremento
+// Você pode mover a expressão de incremento para dentro do corpo do laço:
+
+for (let i = 0; i < 5; ) {
+  console.log(i);
+
+  i++;
+}
+
+// Resultado: 0, 1, 2, 3, 4
+
+// Laços infinitos (cuidado!)
+// Como mencionado, se você não definir corretamente uma condição de parada, você pode acabar criando um laço infinito:
+
+for (;;) {
+  console.log("Laço infinito!");
+}
+
+// Esse código ficará executando para sempre, travando seu programa.
+// Para evitar isso, sempre certifique-se de definir uma condição que eventualmente se torne falsa ou use break para sair do laço.
+
+//--------------------
+
+// Quando usar cada variante?
+
+//Laço tradicional: Use quando souber exatamente quantas vezes precisa executar o bloco.
+
+// Laço com múltiplas variáveis: Utilize quando precisar controlar múltiplas condições ao mesmo tempo.
+
+// Laço com partes omitidas: Use com cautela e somente quando fizer sentido específico para seu cenário.
