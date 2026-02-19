@@ -1,15 +1,9 @@
-/* for (let i = 1; i <= 10; i++) {
-  console.log(i);
-} */
+let contador = 0;
 
-/* for (let numero = 1; numero <= 10; numero++) {
-  if (numero % 2 == 0) {
-    console.log("Número par: ", numero);
+const id = setInterval(() => {
+  contador++;
+  console.log("Tempo decorrido (em segundos):", contador);
+  if (contador == 10) {
+    clearInterval(id);
   }
-} */
-
-let nome = "Wylham";
-
-for (let i = 0; i < nome.length; i++) {
-  console.log(nome[i]);
-}
+}, 100);
