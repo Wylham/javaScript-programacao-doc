@@ -1,9 +1,9 @@
-let contador = 0;
+let pessoa = {
+  nome: "Ana",
 
-const id = setInterval(() => {
-  contador++;
-  console.log("Tempo decorrido (em segundos):", contador);
-  if (contador == 10) {
-    clearInterval(id);
-  }
-}, 100);
+  apresentar: () => {
+    console.log("Olá, meu nome é " + this.nome);
+  },
+};
+
+pessoa.apresentar(); // Resultado: Olá, meu nome é undefined
